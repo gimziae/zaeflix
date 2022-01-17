@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #1c1c1c;
+}
+body header {
+  width: 100%;
+  height: 90px;
+  padding: 10px 50px;
+  position: relative;
+}
+body header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #555;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body header h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  font: normal 40px/1 "Roboto";
+  color: red;
+  cursor: pointer;
+}
+body header #gnbWeb {
+  display: block;
+  width: 500px;
+  height: 35px;
+  position: absolute;
+  bottom: 10px;
+  left: 270px;
+}
+body header #gnbWeb li {
+  float: left;
+  margin-right: 30px;
+  transition: 0.5s;
+}
+body header #gnbWeb li a {
+  color: #ddd;
+  font: normal 16px/35px "arial";
+  bottom: auto;
+}
+body header #gnbWeb li:hover {
+  opacity: 0.7;
+}
+body header #gnbWeb li.on {
+  font-weight: bold;
+  color: #fff;
+}
+body header #gnbMo {
+  display: none;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+body header #gnbMo a {
+  color: #fff;
+  font: normal 12px/30px "arial";
+}
+body header .util {
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+body header .util li {
+  float: left;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+body header .util li a {
+  font-size: 20px;
+  color: #fff;
+}
+body header .util li:hover {
+  transform: scale(1.2);
+}
+body main {
+  padding: 25px 60px;
+}
+body main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body main ul {
+  float: left;
+  margin-bottom: 25px;
+}
+body main ul li {
+  float: left;
+  width: 100px;
+  height: 30px;
+  margin-right: 30px;
+  text-align: center;
+  border: 1px solid #777;
+  background: rgba(77, 77, 77, 0.493);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+body main ul li a {
+  font: normal 14px/30px "arial";
+  color: #fff;
+  transition: 0.5s;
+}
+body main ul li:hover {
+  border-color: #ddd;
+  background: rgba(119, 119, 119, 0.8);
+}
+body main ul li.on {
+  border-color: #ddd;
+  background: rgba(119, 119, 119, 0.8);
+}
+body main ul li.on a {
+  font-weight: bold;
+}
+body main section {
+  width: 100%;
+  float: left;
+}
+body main section article {
+  width: 20%;
+  background: #fff;
+  float: left;
+}
+body main section article:hover {
+  padding: 3px;
+}
+body main section article div {
+  width: 100%;
+  background: #fff;
+  font-size: 0;
+}
+body main section article div a img {
+  width: 100%;
+  object-fit: cover;
+}
+body footer {
+  width: 100%;
+  padding: 50px 350px 30px;
+}
+body footer .inner {
+  width: 100%;
+}
+body footer .inner ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body footer .inner ul {
+  width: 100%;
+}
+body footer .inner ul li {
+  float: left;
+  margin: 10px 20px;
+}
+body footer .inner ul li a {
+  color: #fff;
+  font-size: 25px;
+}
+body footer .inner ul li a:hover {
+  opacity: 0.7;
+}
+body footer .inner table {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+body footer .inner table tr {
+  margin-bottom: 5px;
+}
+body footer .inner table tr td {
+  text-align: left;
+}
+body footer .inner table tr td a {
+  color: #777;
+  font-size: 14px;
+}
+body footer .inner table tr td:hover a {
+  text-decoration: underline;
+}
+body footer .inner > a {
+  display: block;
+  color: #777;
+  width: 85px;
+  height: 32px;
+  border: 1px solid #777;
+  margin-bottom: 25px;
+}
+body footer .inner > a span {
+  display: block;
+  text-align: center;
+  font: normal 14px/32px "arial";
+}
+body footer .inner > a:hover {
+  border-color: #aaa;
+  color: #aaa;
+}
+body footer .inner address {
+  color: #777;
+  font: normal 12px/1.5 "arial";
+}
+
+@media screen and (max-width: 1559px) {
+  body footer {
+    padding: 50px 300px 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  body header h1 {
+    font-size: 30px;
+  }
+  body header #gnbWeb {
+    left: 210px;
+    bottom: 5px;
+  }
+  body header #gnbWeb li a {
+    font-size: 14px;
+  }
+  body header .util {
+    width: 160px;
+  }
+  body header .util li {
+    margin-left: auto;
+    margin-right: 25px;
+  }
+  body header .util li a {
+    font-size: 18px;
+  }
+  body main {
+    padding: 20px 40px;
+  }
+  body main ul {
+    margin-bottom: 20px;
+  }
+  body main ul li {
+    width: 80px;
+    height: 25px;
+    margin-right: 20px;
+  }
+  body main ul li a {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  body main section article {
+    width: 15%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  body main section article:hover {
+    padding: 2px;
+  }
+  body footer {
+    padding: 50px 30px 20px;
+  }
+  body footer .inner ul {
+    width: 100%;
+  }
+  body footer .inner ul li a {
+    font-size: 20px;
+  }
+  body footer .inner table {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  body footer .inner table tr {
+    margin-bottom: 5px;
+  }
+  body footer .inner table tr td a {
+    color: #777;
+    font-size: 12px;
+  }
+  body footer .inner > a {
+    width: 70px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  body footer .inner > a span {
+    font: normal 12px/30px "arial";
+  }
+  body footer .inner address {
+    color: #777;
+    font: normal 11px/1.8 "arial";
+  }
+}
+@media screen and (max-width: 899px) {
+  body header {
+    height: 70px;
+  }
+  body header h1 {
+    font-size: 30px;
+    left: auto;
+  }
+  body header #gnbWeb {
+    display: none;
+  }
+  body header #gnbMo {
+    display: block;
+    position: absolute;
+    left: 180px;
+    bottom: 5px;
+  }
+  body header #gnbMo a i {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  body header .util {
+    width: 120px;
+  }
+  body header .util li a {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  body main {
+    padding: 15px 30px;
+  }
+  body main ul {
+    margin-bottom: 15px;
+  }
+  body main ul li {
+    width: 70px;
+    height: 25px;
+    margin-right: 15px;
+  }
+  body main ul li a {
+    font-size: 11px;
+    line-height: 25px;
+  }
+  body main section article {
+    width: 20%;
+  }
+  body footer {
+    padding: 30px 30px 10px;
+  }
+  body footer .inner ul {
+    margin-right: 10px;
+  }
+  body footer .inner table {
+    height: 90px;
+  }
+  body footer .inner table tr td a {
+    font-size: 11px;
+  }
+  body footer .inner > a {
+    width: 60px;
+    height: 25px;
+  }
+  body footer .inner > a span {
+    font: normal 11px/25px "arial";
+  }
+  body footer .inner address {
+    font: normal 10px/1.8 "arial";
+  }
+}
+@media screen and (max-width: 679px) {
+  body header {
+    height: 50px;
+  }
+  body header h1 {
+    font-size: 20px;
+    left: 30px;
+  }
+  body header #gnbMo {
+    left: 115px;
+    bottom: 3px;
+  }
+  body header #gnbMo a {
+    font-size: 11px;
+  }
+  body header #gnbMo a i {
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  body header .util {
+    width: 100px;
+    bottom: 0;
+  }
+  body header .util li {
+    margin-right: 20px;
+  }
+  body header .util li a {
+    font-size: 12px;
+  }
+  body main {
+    padding: 10px 20px;
+  }
+  body main ul {
+    margin-bottom: 10px;
+  }
+  body main ul li {
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  body main ul li a {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  body main section article {
+    width: 25%;
+  }
+  body footer {
+    padding: 30px 20px 10px;
+  }
+  body footer .inner ul li {
+    margin: 5px 15px;
+  }
+}
+@media screen and (max-width: 539px) {
+  body header {
+    height: 40px;
+  }
+  body header h1 {
+    font-size: 15px;
+    left: 15px;
+  }
+  body header #gnbMo {
+    left: 75px;
+    bottom: 2px;
+  }
+  body header #gnbMo a {
+    font-size: 10px;
+  }
+  body header #gnbMo a i {
+    font-size: 11px;
+    margin-left: 3px;
+  }
+  body header .util {
+    width: 90px;
+    height: 20px;
+    bottom: 10px;
+  }
+  body header .util li {
+    margin-right: auto;
+    margin-left: 12px;
+  }
+  body header .util li a {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  body main {
+    padding: 10px 20px;
+  }
+  body main ul {
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  body main ul li {
+    width: 30%;
+    height: 20px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  body main ul li a {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  body main section article {
+    width: 40%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
