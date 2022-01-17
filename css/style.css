@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 * {
   margin: 0;
@@ -141,11 +142,8 @@ body main section {
 }
 body main section article {
   width: 20%;
-  background: #fff;
   float: left;
-}
-body main section article:hover {
-  padding: 3px;
+  transition: 0.5s;
 }
 body main section article div {
   width: 100%;
@@ -155,6 +153,33 @@ body main section article div {
 body main section article div a img {
   width: 100%;
   object-fit: cover;
+}
+body main section article div .textbox {
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+body main section article div .textbox span {
+  font: bold 20px/1 "맑은 고딕";
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+}
+body main section article div .textbox p {
+  font: normal 14px/1.4 "맑은 고딕";
+  color: #fff;
+  margin-top: 10px;
+}
+body main section article div:hover .textbox {
+  transform: translateY(0);
+  opacity: 1;
 }
 body footer {
   width: 100%;

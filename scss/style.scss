@@ -151,26 +151,51 @@ body{
             
             article{
                 width: 20%;
-                //padding: 25px;
-                // margin-right: 50px;
-                // margin-bottom: 50px;
-                background: #fff;
                 float: left;
-               
-                &:hover{
-                    padding: 3px;
-                }
+                //padding: 20px;
+                transition: 0.5s;
 
                 div{
                     width: 100%;
                     background: #fff;
                     font-size: 0;
-                    
+
                     a{
                         img{            
                             width: 100%;
                             object-fit: cover;
                         }
+                    }
+
+                    .textbox{
+                        width: 100%;
+                        height: 30%;
+                        background: rgba(0,0,0,0.7);
+                        text-align: center;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transform: translateY(100%);
+                        opacity: 0;
+                        transition: 0.5s;
+
+                        span{
+                            font: bold 20px/1 '맑은 고딕';
+                            color: #fff;
+                            display: block;
+                            margin-top: 20px;
+                        }
+                        p{
+                            font: normal 14px/1.4 '맑은 고딕';
+                            color: #fff;
+                            margin-top: 10px;
+                        }
+                    }
+
+
+                    &:hover .textbox{
+                        transform: translateY(0);
+                        opacity: 1;
                     }
                 }
             }
